@@ -55,6 +55,8 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+    margin-bottom: 10px;
+    width: 350px;
 }
 
 .group:nth-child(1) {
@@ -79,15 +81,17 @@ body {
 }
 
 .instagram-login {
-    background-color: #0095f6;
+    background-color: #0095f6; /* Deixar a frase com bordas e colocar cor da borda */
     color: #ffffff;
     padding: 6px;
     border-radius: 4px;
+    font-weight: 600;
 }
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
     text-transform: inherit;
+    font-weight: calc(550);
 }
 
 .not-account {
@@ -130,5 +134,27 @@ body {
     margin: 0;    
     display: flex;
     padding: 0.1rem;
+    margin-top: -2px;
 }
 
+/* Media Queries */
+
+@media (max-widht: 1024px) {
+    .instagram-wrapper  {
+        width: 90%;
+    }
+}
+
+@media (max-widht: 650px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+}
